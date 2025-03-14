@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <h1>PEDRO BEHLING</h1>
+        <div class="calculator">
+            <h1>Calculadora</h1>
+            <p class="result" id="result"></p>
+            <table>
+                <tr>
+                    <td><button onclick="input('(')" class="buttom">(</button></td> 
+                    <td><button onclick="input(')')" class="buttom">)</button></td>
+                    <td><button onclick="backspace()" class="buttom">←</button></td>
+                    <td><button onclick="input('/')" class="buttom">/</button></td>
+                    <td><button onclick="input('*')" class="buttom">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="input('^')" class="buttom">ₓʸ</button></td>
+                    <td><button onclick="input('7')" class="buttom">7</button></td>
+                    <td><button onclick="input('8')" class="buttom">8</button></td>
+                    <td><button onclick="input('9')" class="buttom">9</button></td>
+                    <td><button onclick="input('-')" class="buttom">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="squareRoot()" class="buttom">²√</button></td>
+                    <td><button onclick="input('4')" class="buttom">4</button></td>
+                    <td><button onclick="input('5')" class="buttom">5</button></td>
+                    <td><button onclick="input('6')" class="buttom">6</button></td>
+                    <td><button onclick="input('+')" class="buttom">+</button></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><button onclick="clean()" class="buttomResult">C</button></td>
+                    <td><button onclick="input('1')" class="buttom">1</button></td>
+                    <td><button onclick="input('2')" class="buttom">2</button></td>
+                    <td><button onclick="input('3')" class="buttom">3</button></td>
+                    <td rowspan="2"><button onclick="result()" class="buttomResult">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="input(0)" class="buttom0">0</button></td>
+                    <td><button onclick="input('.')" class="buttom">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="funcionamento.js"></script>
+</body>
+</html>
